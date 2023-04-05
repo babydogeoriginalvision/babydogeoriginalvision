@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className=" margin-auto">
+        <div className=" margin-auto text-white">
           <div className="flex justify-center  ">
             <div className="w-full overflow-hidden  items-center flex flex-col text-center">
               <div className="w-[150px] h-[150px]  rounded-full">
