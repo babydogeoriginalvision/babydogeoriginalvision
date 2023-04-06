@@ -8,9 +8,9 @@ import { SocialIcon } from "react-social-icons";
 const inter = Inter({ subsets: ["latin"] });
 import coingecko from "../public/coingecko.png";
 import pancakeswap from "../public/pancakeswap.png";
-
+import bsc from "../public/bsc.png";
 import cmc from "../public/cmc.png";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -142,7 +142,7 @@ export default function Home() {
                   CLAIM
                 </button>
               </div>
-              <div className="grid grid-cols-3 gap-8 mt-12">
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-8 mt-12">
                 <div className="flex flex-col text-white items-center">
                   <SocialIcon
                     network="twitter"
@@ -168,12 +168,25 @@ export default function Home() {
                   <div className="pt-2">Discord</div>
                 </div>
                 <div className="flex flex-col text-white items-center">
-                <SocialIcon
-                  network="github"
-                  fgColor="white"
-                  url="https://github.com/babydogeoriginalvision"
-                ></SocialIcon>
-                <div  className="pt-2">Github</div>
+                  <SocialIcon
+                    network="github"
+                    fgColor="white"
+                    url="https://github.com/babydogeoriginalvision"
+                  ></SocialIcon>
+                  <div className="pt-2">Github</div>
+                </div>
+               
+                <div className="flex flex-col text-white items-center">
+                  <SocialIcon
+                    network="medium"
+                    fgColor="white"
+                    url="https://babydogeoriginalvision.com"
+                  ></SocialIcon>
+                  <div className="pt-2">Medium</div>
+                </div>
+                <div className="flex flex-col text-white items-center">
+                  <Image width={50} src={coingecko}></Image>
+                  <div className="pt-2">CoinGecko</div>
                 </div>
                 <div className="flex flex-col text-white items-center">
                   <SocialIcon
@@ -183,35 +196,19 @@ export default function Home() {
                   ></SocialIcon>
                   <div className="pt-2">电报信使</div>
                 </div>
+               
                 <div className="flex flex-col text-white items-center">
-                <SocialIcon
-                  network="medium"
-                  fgColor="white"
-                  url="https://babydogeoriginalvision.com"
-                ></SocialIcon>
-                <div className="pt-2">Medium</div>
+                  <Image width={50} src={cmc}></Image>
+                  <div className="pt-2">CoinMarketCap</div>
                 </div>
                 <div className="flex flex-col text-white items-center">
-                  <Image
-                    
-                    width={50}
-                   src={coingecko}
-                  ></Image>
-                  <div className="pt-2">CoinGecko</div>
-                </div><div className="flex flex-col text-white items-center">
-                <Image
-                    
-                    width={50}
-                   src={cmc}
-                  ></Image>
-                  <div className="pt-2">CoinMarketCap</div>
-                </div><div className="flex flex-col text-white items-center">
-                <Image
-                    
-                    width={50}
-                   src={pancakeswap}
-                  ></Image>
+                  <Image width={50} src={pancakeswap}></Image>
                   <div className="pt-2">Pancake Swap</div>
+                </div>
+                <div className="flex flex-col text-white items-center">
+                  <Link href="https://bscscan.com/token/0x45bc3cf6bebe58252c3538660a9536052b60dff0">
+                  <Image width={50} src={bsc}></Image>
+                  <div className="pt-2">Explorer</div></Link>
                 </div>
               </div>
               <div className="rounded-lg w-full md:w-1/3 bg-[#191924] p-8 mt-24 text-start font-extralight">
