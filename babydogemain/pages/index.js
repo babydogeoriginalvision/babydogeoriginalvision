@@ -6,6 +6,11 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import logo from "../public/logo.png";
 import { SocialIcon } from "react-social-icons";
 const inter = Inter({ subsets: ["latin"] });
+import coingecko from "../public/coingecko.png";
+import pancakeswap from "../public/pancakeswap.png";
+
+import cmc from "../public/cmc.png";
+
 
 export default function Home() {
   return (
@@ -144,7 +149,7 @@ export default function Home() {
                     fgColor="white"
                     url="https://twitter.com/BabyDogeOVision"
                   ></SocialIcon>
-                  <div className="pt-2">Twitter</div>
+                  <div className="pt-2">Twitter - 推特</div>
                 </div>
                 <div className="flex flex-col text-white items-center">
                   <SocialIcon
@@ -176,7 +181,7 @@ export default function Home() {
                     fgColor="white"
                     url="https://t.me/BabyDogeOriginalVisionCN"
                   ></SocialIcon>
-                  <div className="pt-2">Telegram CN</div>
+                  <div className="pt-2">电报信使</div>
                 </div>
                 <div className="flex flex-col text-white items-center">
                 <SocialIcon
@@ -185,6 +190,28 @@ export default function Home() {
                   url="https://babydogeoriginalvision.com"
                 ></SocialIcon>
                 <div className="pt-2">Medium</div>
+                </div>
+                <div className="flex flex-col text-white items-center">
+                  <Image
+                    
+                    width={50}
+                   src={coingecko}
+                  ></Image>
+                  <div className="pt-2">CoinGecko</div>
+                </div><div className="flex flex-col text-white items-center">
+                <Image
+                    
+                    width={50}
+                   src={cmc}
+                  ></Image>
+                  <div className="pt-2">CoinMarketCap</div>
+                </div><div className="flex flex-col text-white items-center">
+                <Image
+                    
+                    width={50}
+                   src={pancakeswap}
+                  ></Image>
+                  <div className="pt-2">Pancake Swap</div>
                 </div>
               </div>
               <div className="rounded-lg w-full md:w-1/3 bg-[#191924] p-8 mt-24 text-start font-extralight">
