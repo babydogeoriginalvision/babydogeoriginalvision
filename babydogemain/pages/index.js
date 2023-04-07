@@ -23,6 +23,12 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className=" margin-auto text-white">
+          <div className="w-screen flex items-center justify-center   md:justify-end">
+           
+            <div className="w-[240px] text-center flex bg-[#191924] border border-gray-400 text-gray-200 hover:text-white items-center text-lg justify-center px-4 font-extrabold  h-[80px] hover:bg-blue-700 rounded-2xl hover:border-2 mr-0 mb-4  md:mr-8 hover:border-blue-500">
+                <Image src={pancakeswap} width={50}></Image> Buy on PancakeSwap
+            </div>
+          </div>
           <div className="flex justify-center  ">
             <div className="w-full overflow-hidden  items-center flex flex-col text-center">
               <div className="w-[150px] h-[150px]  rounded-full">
@@ -30,7 +36,7 @@ export default function Home() {
               </div>
               <div className="text-5xl pt-[30px]  font-black">$BDOV</div>
               <div className="text-[#FF1640] text-[24px] font-black pb-16">
-                Babydoge Original Vision
+                BABYDOGE ORIGINAL VISION
               </div>
               <div className="flex w-[300px] md:w-[500px] justify-between md:justify-around">
                 <ConnectButton.Custom>
@@ -147,7 +153,7 @@ export default function Home() {
                   <SocialIcon
                     network="twitter"
                     fgColor="white"
-                    url="https://twitter.com/BabyDogeOVision"
+                    url="https://twitter.com/BabyDogeBDOV"
                   ></SocialIcon>
                   <div className="pt-2">Twitter - 推特</div>
                 </div>
@@ -167,15 +173,7 @@ export default function Home() {
                   ></SocialIcon>
                   <div className="pt-2">Discord</div>
                 </div>
-                <div className="flex flex-col text-white items-center">
-                  <SocialIcon
-                    network="github"
-                    fgColor="white"
-                    url="https://github.com/babydogeoriginalvision"
-                  ></SocialIcon>
-                  <div className="pt-2">Github</div>
-                </div>
-               
+
                 <div className="flex flex-col text-white items-center">
                   <SocialIcon
                     network="medium"
@@ -190,13 +188,21 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col text-white items-center">
                   <SocialIcon
+                    network="twitter"
+                    fgColor="white"
+                    url="https://twitter.com/BabyDogeBDOVCN"
+                  ></SocialIcon>
+                  <div className="pt-2">推特</div>
+                </div>
+                <div className="flex flex-col text-white items-center">
+                  <SocialIcon
                     network="telegram"
                     fgColor="white"
                     url="https://t.me/BabyDogeOriginalVisionCN"
                   ></SocialIcon>
                   <div className="pt-2">电报信使</div>
                 </div>
-               
+
                 <div className="flex flex-col text-white items-center">
                   <Image width={50} src={cmc}></Image>
                   <div className="pt-2">CoinMarketCap</div>
@@ -207,8 +213,9 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col text-white items-center">
                   <Link href="https://bscscan.com/token/0x45bc3cf6bebe58252c3538660a9536052b60dff0">
-                  <Image width={50} src={bsc}></Image>
-                  <div className="pt-2">Explorer</div></Link>
+                    <Image width={50} src={bsc}></Image>
+                    <div className="pt-2">Explorer</div>
+                  </Link>
                 </div>
               </div>
               <div className="rounded-lg w-full md:w-1/3 bg-[#191924] p-8 mt-24 text-start font-extralight">
